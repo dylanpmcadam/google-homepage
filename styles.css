@@ -1,0 +1,225 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* My Styles */
+
+
+body {
+	font-family: arial, sans-serif;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: rgb(0, 0, 0, 0.75);
+}
+
+
+/* Header */
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 23px;
+	align-items: center;
+	font-size: 13px;
+}
+
+.header-left-div ul, .header-right-div ul {
+	display: flex;
+}
+
+
+/* Left Header Div */
+.header-left-div {
+	margin: 0 0 0 30px;
+}
+
+.header-left-div li:nth-child(2) {
+	padding: 0 0 0 15px;
+}
+
+.header-left-div li:nth-child(2) {
+	padding: 0 0 0 15px;
+}
+
+/* Right Header Div */
+.header-right-div {
+	display: flex;
+	padding: 0 30px;
+}
+
+.header-right-div ul {
+	display: flex;
+	align-items: center;
+}
+
+.header-right-div li:nth-child(2) {
+	padding: 0 30px;
+}
+
+.apps-icon {
+	opacity: 54%;
+	cursor: pointer;
+}
+
+.apps-icon:hover {
+	opacity: 100%;
+}
+
+.header-right-div li:nth-child(4) img {
+	padding: 0 0 0 15px;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+}
+
+/* Main */
+
+.main {
+	padding-top: 197px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	width: 271.997px;
+	height: 91.9965px;
+	padding-bottom: 24px;
+}
+
+input {
+	width: 453.993px;
+	height: 38.9931px;
+	border-radius: 24px;
+	border-color: rgb(228, 228, 288);
+	border-style: solid;
+	border-width: 1.11111px;
+	padding-left: 40px;
+}
+
+input:focus {
+	outline:0;
+}
+
+.search { 
+    position:relative;
+}
+
+.search-icon {
+    position:absolute;
+    bottom: 10px;
+	left: 10px;
+	opacity: 45%;
+}
+
+.microphone-icon {
+    position:absolute;
+    bottom: 10px;
+	left: 463.984px;
+	height: 22px;
+	cursor: pointer;
+}
+
+.buttons {
+	padding-top: 18px;
+}
+
+.buttons button {
+	margin: 11px 4px;
+	border: 1.111px;
+	padding: 0 16px;
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: rgb(242, 242, 242);
+	height: 35.9896px;
+	color: rgb(95, 99, 104);
+	cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(242, 242, 242);
+	margin-top: 105px;
+	border-top-color: rgb(228, 228, 288);
+	border-top-style: solid;
+	border-top-width: 1.11111px;
+	line-height: 40px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 14px;
+}
+
+.footer-left-div ul, .footer-right-div ul {
+	display: flex;
+}
+
+/* Left FooterDiv */
+.footer-left-div li {
+	padding-left: 27px;
+}
+
+.footer-right-div li {
+	padding-left: 27px;
+}
+
+.footer-right-div li:nth-child(3) {
+	padding-right: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	footer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
